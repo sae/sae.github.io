@@ -1,15 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta http-equiv="Content-Type" 
-      content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Sgibnev | IT Consultant & Systems Architect</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 0.75rem;
+        }
+
+        .summary-text {
+            font-size: 1.1rem;
+            color: #f1f5f9;
+        }
+
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .comp-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .comp-card h3 {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .comp-card p {
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .job-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.75rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .job-company {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .job-time {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background: #0f172a;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .job-desc {
+            list-style-type: none;
+        }
+
+        .job-desc li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .job-desc li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .edu-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Sae762 github pages</h1>
 
-<div><a href="pano">панорамы</a></div>
+<div class="header-subtitle"><a href="https://github.com/sae">GitHub</a> |  <a href="/pano">Panorams</a></div>
+    <div class="container">
+        <header>
+            <h1 class="header-title">Alexander Sgibnev</h1>
+            <div class="header-subtitle">IT Consultant | Systems Architect | Cybersecurity & Infrastructure</div>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:sae762@gmail.com">sae762@gmail.com</a></span>
+                <span>📍 Almaty, Kazakhstan</span>
+                <span>📅 Born 1969</span>
+            </div>
+        </header>
 
-<div> </div>
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                IT Consultant and Systems Architect with 35+ years of experience designing secure and scalable infrastructure for banking, telecom, and cloud companies. Led the development of Kazakhstan’s first mass-market Internet banking platforms. Now provide remote consulting to US and CIS companies on cloud migration, cybersecurity, and PKI. Known for deep expertise in Linux, cryptography, and mission-critical banking systems.
+            </p>
+        </section>
 
+        <section id="competencies">
+            <h2>Core Competencies</h2>
+            <div class="competencies-grid">
+                <div class="comp-card">
+                    <h3>Infrastructure</h3>
+                    <p>Linux Debian/Ubuntu/Gentoo, VmWare, Windows Server, AD</p>
+                </div>
+                <div class="comp-card">
+                    <h3>Cloud & Security</h3>
+                    <p>JettyCloud, PKI, E-Signature, Java-card, DES, AES, SSL, RSA</p>
+                </div>
+                <div class="comp-card">
+                    <h3>Banking Systems</h3>
+                    <p>SWIFT, IBM MERVA2, Internet Banking, Payment Security</p>
+                </div>
+                <div class="comp-card">
+                    <h3>Networking</h3>
+                    <p>Novell Netware, X25, INMARSAT, Corporate LAN/WAN</p>
+                </div>
+                <div class="comp-card">
+                    <h3>IoT & Hardware</h3>
+                    <p>STM32, ESP32, Smart Home, Embedded Linux</p>
+                </div>
+                <div class="comp-card">
+                    <h3>Certifications</h3>
+                    <p>Novell Netware, Windows NT</p>
+                </div>
+            </div>
+        </section>
 
-</body></html>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">IT Consultant & Remote Administrator</div>
+                            <div class="job-company">JettyCloud, RingCentral USA, and Confidential Clients</div>
+                        </div>
+                        <span class="job-time">2020 - Present</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>Consulting on cloud architecture, cybersecurity, and infrastructure for US/CIS clients</li>
+                        <li>Administration of Linux cloud servers and VmWare virtual environments</li>
+                        <li>Design of PKI and Digital Signature systems for enterprises</li>
+                        <li>IoT development: STM/ESP microcontrollers for Smart Home solutions</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Head of Internet Banking Development</div>
+                            <div class="job-company">Kazkom / Kazkommertsbank</div>
+                        </div>
+                        <span class="job-time">2010 - 2020</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>Launched Homebank, Homeshop, Onlinebank for 2M+ retail and corporate clients</li>
+                        <li>Built PKI and E-Signature infrastructure based on Java-cards and HSMs</li>
+                        <li>Migrated 200+ servers to VmWare on Gentoo Linux</li>
+                        <li>Implemented DES, AES, SSL, RSA for payment transaction security</li>
+                        <li>Company representative at CARTES: Paris, London, Hong Kong</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior System Administrator</div>
+                            <div class="job-company">Kazkommertsbank</div>
+                        </div>
+                        <span class="job-time">1998 - 2010</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>Managed core banking network. Deployed Novell Netware, Windows NT, AD.</li>
+                        <li>Pioneered Linux in production.</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Systems Engineer</div>
+                            <div class="job-company">Alem-bank</div>
+                        </div>
+                        <span class="job-time">1990 - 1998</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>Deployed IBM MERVA2 for SWIFT. Supported OS/2, DB2, X25.</li>
+                        <li>Configured INMARSAT satellite links.</li>
+                    </ul>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Electronics Engineer</div>
+                            <div class="job-company">Uventa LLC</div>
+                        </div>
+                        <span class="job-time">1987 - 1990</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>PC assembly, Novell network setup, server support.</li>
+                        <li>Developed system utilities and antivirus software.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu-grid">
+                <div class="comp-card">
+                    <div class="job-company" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Kazakh Polytechnic University</div>
+                    <p>B.S. Electronic Computing Machines and Networks | Systems Engineer</p>
+                </div>
+                <div class="comp-card">
+                    <div class="job-company" style="font-size: 1.1rem; margin-bottom: 0.25rem;">Carnegie Mellon University USA</div>
+                    <p>Agile Methods in Engineering</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
